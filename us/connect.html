@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link type="text/css" href="../styles/global.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/global.css">
+  <link type="text/css" rel="stylesheet" href="styles/connect.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/connect.js"></script>
+  <link type="favicon" rel="shotcut icon" href="images/fav.ico">
+  <title>Lidis | Connect to us</title>
+ </head>
+ <body>
+
+
+
+  <nav class="navigation">
+   <sectoin class="moving_text">
+   
+   </sectoin>
+
+   <section id="navcenter">
+    <ul>
+     <li id="nav_mobile">منو</li>
+     <li><a href="..">خانه</a></li>
+     <li><a href="about.html">درباره ما</a></li>
+     <li><a href="#" class="inpage">تماس با ما</a></li>
+    </ul>
+   </section>
+  </nav>
+
+  <main>
+   <h1>تماس با ما</h1>
+   <p>جهت اعلام همکاری پیشنهادات و اگر درون سایت اشکالی یافت کردید برای ما در فرم زیر اطلاعات خودتونو پیامتونو بنویسید.</p>
+   <form name="con" action="sm.php" method="POST">
+    <span class="red">*</span><input type="text" placeholder="نام" id="name" name="name">
+    <span class="red">*</span><input type="email" placeholder="ایمیل" id="email" name="email"><br>
+    <span class ="red">*</span><textarea  class = "aria_input" aria-multiline="true" placeholder="متن پیام" id="message" name="message"></textarea><br>
+    <input type="button" onclick="send()" value="ارسال">
+    <input type="reset" value="بازنشانی">
+   </form>
+   <p id="error" class="red"></p>
+  </main>
+ </body>
+</html>

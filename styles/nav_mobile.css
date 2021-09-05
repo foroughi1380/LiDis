@@ -1,0 +1,41 @@
+body{
+ font-size: 0.9em;
+}
+
+nav ul{
+ padding: 0 !important;
+}
+nav ul li{
+ display : none !important;
+}
+
+nav #nav_mobile{
+ display: block !important;
+ margin: 5px;
+ color: whitesmoke;
+ text-decoration: none;
+ padding: 0 !important;
+}
+
+nav:hover{
+ position: fixed;
+ width: 100%;
+ background-color: hsl(270, 10%, 8%);
+ 
+}
+
+nav:hover ul{
+ width : 80vw ;
+}
+
+nav:hover ul li{
+ display: block !important;
+ border-top: solid 1px hsl(270, 10%, 18%);
+}
+
+nav:hover ul #nav_mobile{
+ display: block !important;
+ border-top: none;
+ color: gold;
+ transition: color 0.5s linear;
+}

@@ -1,0 +1,116 @@
+@keyframes bol{
+ 0%{
+  transform : rotate(1deg);
+ }
+ 2.5%{
+  transform : rotate(5deg);
+ }
+ 5%{
+  transform : rotate(-5deg);
+ }
+ 7.5%{
+  transform : rotate(-1deg);
+ }
+ 10%{
+  transform : rotate(0deg);
+ }
+}
+
+main{
+ display: inline-block;
+ vertical-align: top;
+ width: calc(100% - 100px - 5px - 9%);
+ background-color: whitesmoke;
+ margin-right: 5%;
+ margin-left: 2%;
+ border-right: dashed hsl(100 , 0% , 80%);
+ border-left: dashed hsl(100 , 0% , 80%);
+ padding: 2em;
+ padding-top: 3em;
+ min-height: 100vh;
+}
+
+main h1{
+ direction : auto;
+ color: gray;
+ border-bottom: solid 1px grey;
+ text-align: center;
+}
+
+main h2{
+ margin-right: 2em;
+ margin-left: 2em;
+ color: gray;
+ border-bottom: solid 1px gray;
+ font-size: 1.3em;
+}
+
+
+main dl dt{
+ display: list-item;
+ list-style-type: decimal;
+ margin-top: 0.6em;
+ list-style-position: inside;
+}
+main dl dd{
+ display: list-item;
+ list-style-type: circle;
+}
+
+main .center{
+ text-align: center;
+}
+main .copyright{
+ color: gray;
+ position: relative;
+ bottom: -30px;
+}
+
+.negarpic{
+ width: 150px;
+ height: 120px;
+ border: solid 5px hsl(31, 18%, 71%);
+ text-justify: center;
+}
+
+/*
+ *aside
+ */
+
+aside{
+ display: inline-block;
+ vertical-align: top;
+ text-align: center;
+ padding-top: 4em;
+ z-index: -1;
+}
+
+aside img{
+ width:  100px;
+ height: 100px;
+ border-radius: 50%;
+ background-color: whitesmoke;
+ box-shadow: 2px 2px 2px gray;
+ margin-left: 2%;
+}
+aside #line{
+ height: calc(100% - 4em - 54px);
+ border-left: dashed 3px hsl(31, 18%, 50%);
+ display: inline-block;
+ top: 4em;
+}
+
+/* 
+ * float button go to top
+ */
+
+#gototop{
+ width: 50px;
+ height: 50px;
+ position: fixed;
+ right: calc(5% - 25px);
+ bottom: 1em;
+ animation-name: bol;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+}

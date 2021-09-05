@@ -1,0 +1,10 @@
+aside{
+ display: none;
+}
+main{
+ width: 90%;
+}
+#gototop{
+ right: auto;
+ left: 10px;
+}
